@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Virtual Piano</title>
+    <link
+      rel="stylesheet"
+      href="style.css"
+    />
+  </head>
+  <body>
+    <div class="piano">
+      <!-- White and Black Keys with corresponding sound files -->
+      <button
+        class="key white"
+        data-note="C"
+        onclick="playSound('C')"
+      >
+        <img
+          src="images/White Key.jpg"
+          alt="C4"
+        />
+      </button>
+      <audio
+        id="C"
+        src="sounds/key01.mp3"
+      ></audio>
+
+      <button
+        class="key black"
+        data-note="Csharp"
+        onclick="playSound('Csharp')"
+      >
+        <img
+          src="images/Black Key.jpg"
+          alt="C#4"
+        />
+      </button>
+      <audio
+        id="Csharp"
+        src="sounds/key02.mp3"
+      ></audio>
+
+      <button
+        class="key white"
+        data-note="D"
+        onclick="playSound('D')"
+      >
+        <img
+          src="images/White Key.jpg"
+          alt="D4"
+        />
+      </button>
+      <audio
+        id="D"
+        src="sounds/key03.mp3"
+      ></audio>
+
+      <button
+        class="key black"
+        data-note="Dsharp"
+        onclick="playSound('Dsharp')"
+      >
+        <img
+          src="images/Black Key.jpg"
+          alt="D#4"
+        />
+      </button>
+      <audio
+        id="Dsharp"
+        src="sounds/key04.mp3"
+      ></audio>
+
+      <button
+        class="key white"
+        data-note="E"
+        onclick="playSound('E')"
+      >
+        <img
+          src="images/White Key.jpg"
+          alt="E4"
+        />
+      </button>
+      <audio
+        id="E"
+        src="sounds/key05.mp3"
+      ></audio>
+
+      <button
+        class="key white"
+        data-note="F"
+        onclick="playSound('F')"
+      >
+        <img
+          src="images/White Key.jpg"
+          alt="F4"
+        />
+      </button>
+      <audio
+        id="F"
+        src="sounds/key06.mp3"
+      ></audio>
+
+      <button
+        class="key black"
+        data-note="Fsharp"
+        onclick="playSound('Fsharp')"
+      >
+        <img
+          src="images/Black Key.jpg"
+          alt="F#4"
+        />
+      </button>
+      <audio
+        id="Fsharp"
+        src="sounds/key07.mp3"
+      ></audio>
+
+      <button
+        class="key white"
+        data-note="G"
+        onclick="playSound('G')"
+      >
+        <img
+          src="images/White Key.jpg"
+          alt="G4"
+        />
+      </button>
+      <audio
+        id="G"
+        src="sounds/key08.mp3"
+      ></audio>
+
+      <button
+        class="key black"
+        data-note="Gsharp"
+        onclick="playSound('Gsharp')"
+      >
+        <img
+          src="images/Black Key.jpg"
+          alt="G#4"
+        />
+      </button>
+      <audio
+        id="Gsharp"
+        src="sounds/key09.mp3"
+      ></audio>
+
+      <button
+        class="key white"
+        data-note="A"
+        onclick="playSound('A')"
+      >
+        <img
+          src="images/White Key.jpg"
+          alt="A4"
+        />
+      </button>
+      <audio
+        id="A"
+        src="sounds/key10.mp3"
+      ></audio>
+
+      <button
+        class="key black"
+        data-note="Asharp"
+        onclick="playSound('Asharp')"
+      >
+        <img
+          src="images/Black Key.jpg"
+          alt="A#4"
+        />
+      </button>
+      <audio
+        id="Asharp"
+        src="sounds/key11.mp3"
+      ></audio>
+
+      <button
+        class="key white"
+        data-note="B"
+        onclick="playSound('B')"
+      >
+        <img
+          src="images/White Key.jpg"
+          alt="B4"
+        />
+      </button>
+      <audio
+        id="B"
+        src="sounds/key12.mp3"
+      ></audio>
+
+      <button
+        class="key white"
+        data-note="C5"
+        onclick="playSound('C5')"
+      >
+        <img
+          src="images/White Key.jpg"
+          alt="C5"
+        />
+      </button>
+      <audio
+        id="C5"
+        src="sounds/key13.mp3"
+      ></audio>
+
+      <button
+        class="key black"
+        data-note="Csharp5"
+        onclick="playSound('Csharp5')"
+      >
+        <img
+          src="images/Black Key.jpg"
+          alt="C#5"
+        />
+      </button>
+      <audio
+        id="Csharp5"
+        src="sounds/key14.mp3"
+      ></audio>
+
+      <button
+        class="key white"
+        data-note="D5"
+        onclick="playSound('D5')"
+      >
+        <img
+          src="images/White Key.jpg"
+          alt="D5"
+        />
+      </button>
+      <audio
+        id="D5"
+        src="sounds/key15.mp3"
+      ></audio>
+
+      <button
+        class="key black"
+        data-note="Dsharp5"
+        onclick="playSound('Dsharp5')"
+      >
+        <img
+          src="images/Black Key.jpg"
+          alt="D#5"
+        />
+      </button>
+      <audio
+        id="Dsharp5"
+        src="sounds/key16.mp3"
+      ></audio>
+
+      <button
+        class="key white"
+        data-note="E5"
+        onclick="playSound('E5')"
+      >
+        <img
+          src="images/White Key.jpg"
+          alt="E5"
+        />
+      </button>
+      <audio
+        id="E5"
+        src="sounds/key17.mp3"
+      ></audio>
+
+      <button
+        class="key white"
+        data-note="F5"
+        onclick="playSound('F5')"
+      >
+        <img
+          src="images/White Key.jpg"
+          alt="F5"
+        />
+      </button>
+      <audio
+        id="F5"
+        src="sounds/key18.mp3"
+      ></audio>
+
+      <button
+        class="key black"
+        data-note="Fsharp5"
+        onclick="playSound('Fsharp5')"
+      >
+        <img
+          src="images/Black Key.jpg"
+          alt="F#5"
+        />
+      </button>
+      <audio
+        id="Fsharp5"
+        src="sounds/key19.mp3"
+      ></audio>
+
+      <button
+        class="key white"
+        data-note="G5"
+        onclick="playSound('G5')"
+      >
+        <img
+          src="images/White Key.jpg"
+          alt="G5"
+        />
+      </button>
+      <audio
+        id="G5"
+        src="sounds/key20.mp3"
+      ></audio>
+
+      <button
+        class="key black"
+        data-note="Gsharp5"
+        onclick="playSound('Gsharp5')"
+      >
+        <img
+          src="images/Black Key.jpg"
+          alt="G#5"
+        />
+      </button>
+      <audio
+        id="Gsharp5"
+        src="sounds/key21.mp3"
+      ></audio>
+
+      <button
+        class="key white"
+        data-note="A5"
+        onclick="playSound('A5')"
+      >
+        <img
+          src="images/White Key.jpg"
+          alt="A5"
+        />
+      </button>
+      <audio
+        id="A5"
+        src="sounds/key22.mp3"
+      ></audio>
+
+      <button
+        class="key black"
+        data-note="Asharp5"
+        onclick="playSound('Asharp5')"
+      >
+        <img
+          src="images/Black Key.jpg"
+          alt="A#5"
+        />
+      </button>
+      <audio
+        id="Asharp5"
+        src="sounds/key23.mp3"
+      ></audio>
+
+      <button
+        class="key white"
+        data-note="B5"
+        onclick="playSound('B5')"
+      >
+        <img
+          src="images/White Key.jpg"
+          alt="B5"
+        />
+      </button>
+      <audio
+        id="B5"
+        src="sounds/key24.mp3"
+      ></audio>
+    </div>
+    <script src="main.js"></script>
+    <script>
+      function playSound(note) {
+        const audio = document.getElementById(note);
+        if (audio) {
+          audio.currentTime = 0; // Restart the sound if it's already playing
+          audio.play();
+        }
+      }
+    </script>
+  </body>
+</html>
